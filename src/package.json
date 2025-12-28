@@ -1,14 +1,15 @@
 {
   "name": "whatsapp-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "WhatsApp Web app contained in the Electron app.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "npx electron-packager . whatsapp-electron --platform=linux --arch=x64 --icon=assets/whatsapp.png --overwrite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pawel Cioch + AI",
   "license": "ISC",
   "dependencies": {
     "electron": "^34.1.1",
